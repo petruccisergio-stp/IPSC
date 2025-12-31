@@ -8,6 +8,8 @@ import {
 } from 'lucide-react';
 import { FlipcardContent, Devotional } from './types';
 
+export const GEMINI_API_KEY = "";
+
 export const CHURCH_NAME = "IP São Caetano do Sul";
 
 export const NAV_ITEMS = [

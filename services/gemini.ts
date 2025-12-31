@@ -7,6 +7,20 @@ const CACHE_PREFIX = 'ipsc_cache_v4_';
 const memoryCache = new Map<string, { data: any, timestamp: number }>();
 const inflightRequests = new Map<string, Promise<any>>();
 
+// services/gemini.ts
+
+// Função simulada (MOCK) - Não usa IA de verdade
+export async function sendMessageToGemini(message: string) {
+  return new Promise<string>((resolve) => {
+    
+    // Simula um tempo de espera de 1.5 segundos
+    setTimeout(() => {
+      resolve(`Você disse: "${message}". \n(Esta é uma resposta automática pois a IA está desligada).`);
+    }, 1500);
+    
+  });
+}
+
 export const checkCache = (key: string) => {
   if (memoryCache.has(key)) return memoryCache.get(key)!.data;
   const cached = localStorage.getItem(CACHE_PREFIX + key);
