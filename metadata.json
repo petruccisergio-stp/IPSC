@@ -1,0 +1,7 @@
+{
+  "name": "Mobile Igreja Conectada",
+  "description": "Um aplicativo completo para membros e visitantes da igreja, incluindo bíblia, hinário, devocionais gerados por IA, agenda e registro de visitantes.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
